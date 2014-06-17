@@ -1,4 +1,4 @@
-/* This version is a concept and does not support Common.js just yet */
+/* This version is a concept and does not support CommonJS just yet */
 
 if (typeof define !== 'function') {
   define = function (deps, definition) {
