@@ -4,14 +4,14 @@
 // jQuery is not likely to run in those environments.
 // See jqueryPluginCommonJs.js for that version.
 
-(function (factory) {
+(function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
         define(['jquery'], factory);
     } else {
         // Browser globals
-        factory(jQuery);
+        factory(root.jQuery);
     }
-}(function ($) {
+}(this, function ($) {
     $.fn.jqueryPlugin = function () {};
 }));
