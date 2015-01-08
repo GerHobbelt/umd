@@ -16,9 +16,12 @@
         return function () {};
     });
     
-}( // Help Node out by setting up define.
-     typeof module === 'object' && typeof define !== 'function'
-    ? function (factory) { module.exports = factory(require, exports, module); } 
+}( 
+    // Help Node out by setting up define.
+    typeof module === 'object' && typeof define !== 'function'
+    ? function (factory) { 
+        module.exports = factory(require, exports, module); 
+    } 
     : define
 ));
 
