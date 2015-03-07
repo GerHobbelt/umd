@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/umdjs/umd/issues"
   },
-  "homepage": "https://github.com/umdjs/umd"
+  "homepage": "https://github.com/umdjs/umd",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.0"
+  }
 }
