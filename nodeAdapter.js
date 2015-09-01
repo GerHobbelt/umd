@@ -9,18 +9,18 @@
 // with a circular dependency, see commonjsAdapter.js
 
 (function(define) {
-    
+
     define(function (require, exports, module) {
         var b = require('b');
 
         return function () {};
     });
-    
+
 }( // Help Node out by setting up define.
     typeof module === 'object' && typeof define !== 'function' ?
-    function (factory) { 
-        module.exports = factory(require, exports, module); 
-    } :
-    define;
+        function (factory) { 
+            module.exports = factory(require, exports, module); 
+        } :
+        define;
 ));
 
